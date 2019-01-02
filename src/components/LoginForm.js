@@ -22,12 +22,12 @@ class LoginForm extends Component {
 		});
 	}
 
-	// helper to handle failed login
+	// helper function to handle failed login
 	onLoginFail() {
 		this.setState({ error: 'Authentication Failed', loading: false });
 	}
 
-	// helper to handle success login
+	// helper function to handle success login
 	onLoginSuccess() {
 		this.setState({
 			email: '',
