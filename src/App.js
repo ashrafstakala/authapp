@@ -22,7 +22,7 @@ class App extends Component {
 	// call to check if user is logged in or not
 		firebase.auth().onAuthStateChanged((user) => {
 			if (user) {
-				this.setState({ loggedIn: trie });
+				this.setState({ loggedIn: true });
 			} else {
 				this.setState({ loggedIn: false });
 			}
